@@ -1,62 +1,3 @@
-
-
-
-  
-
-// You are developing a social media application where users can follow other users.
-// Show how you will use your knowledge in data structures to store followers for each
-// user.
-  
-
- class following{
-  constructor(user){
-      this.user=userr
-      this.follower=[]
-  }
-  addUser(follower){
-      if(this.follower.includes(follower))
-      console.log("exist")
-  else{this.follower.push(follower)
-  }
-}
-}
-const Scarlet = new following("Scarlet")
-Scarlet.addUser("Faith")
-console.log(Scarlet)
-
-
-
-class UserAuthentication {
-    constructor() {
-        this.userAuthenticationDetails = [];
-    }
-    register(userName, password) {
-        let alphaNumeric = /^[a-z0-9]+$/;
-        const credentials = { userName: userName, password: password };
-        if (credentials.password.match(alphaNumeric)) {
-            this.userAuthenticationDetails.push(credentials);
-            console.log("Credentials added successfully.");
-        } else if(!credentials.password.match(alphaNumeric)) {
-            console.log("The password should include both numbers and letters.");
-        }
-    }
-}
-const userAuthenticationDetails = new UserAuthentication();
-const userName = "John";
-const password = "JohnOn123";
-// const password = "john123"
-userAuthenticationDetails.register(userName, password);
-
-
-
-
-
-
-
-
-
-
-
 class Doctor {
     constructor(name, specialty) {
         this.name = name;
@@ -96,14 +37,9 @@ function bookAppointment(doctor, patient) {
 function sendReminder(appointment) {
     console.log(`Reminder: ${appointment.patient.name} has an appointment with ${appointment.doctor.name} at ${appointment.time}`);
 }
-const drSmith = new Doctor('Dr. Smith', 'Cardiology', ['09:00', '10:00', '11:00']);
+const drSmith = new Doctor('Dr. Alan', 'optician', ['09:00', '10:00', '11:00']);
 const patientJohn = new Patient('John Doe', ['09:00', '10:00']);
 const appointment = bookAppointment(drSmith, patientJohn);
 if (appointment) {
     sendReminder(appointment);
 } 
-
-
-
-
-
